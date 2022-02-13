@@ -218,7 +218,7 @@ def phonemsg(d1):
     m="otp for resetting password is:"+str(rand())
     d2='+91'
     d1=d2+d1
-    message=client.messages.create(body=m,from_="+16067160394",to=d1)
+    message=client.messages.create(body=m,from_="your twilio phone number here",to=d1)
 
 # if user present then otp will be sent and user will be redirect to verification page to verify otp
 @app.route('/otpcheck',methods=['get','post'])
